@@ -1,0 +1,1056 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif !important;
+    background-color: #1d1d30;
+    touch-action: pan-x;
+    touch-action: pan-y;
+    position: relative;
+    min-height: 100%;
+    top: 0 !important;
+}
+input:focus {
+    outline: 0;
+}
+input {
+    color: #fff;
+}
+.how-it-works button:focus,
+.tag-friend button:focus,
+button:focus {
+    outline: 0;
+}
+a {
+    color: #1d1d30;
+}
+a:hover {
+    text-decoration: none !important;
+}
+.wrapper {
+    background-color: #1d1d30;
+    color: #fff;
+}
+::placeholder {
+    text-align: left;
+    font: normal normal normal 14px/18px Roboto;
+    letter-spacing: 0;
+    color: #fefefe;
+    opacity: 1;
+}
+.header {
+    background-color: #1a1f26;
+    padding: 30px;
+}
+header {
+    background-color: #1a1f26;
+    padding: 15px 0;
+}
+.site-wrapper {
+    max-width: 1140px;
+}
+.login-logo img {
+    width: 70%;
+    margin: 0 auto;
+}
+.login-form-wrapper {
+    max-width: 570px;
+    margin: 0 auto;
+}
+.login-form {
+    padding: 12.5% 0;
+}
+.login-input-group input {
+    width: 100%;
+    background: #1a1f26 0 0 no-repeat padding-box;
+    box-shadow: 0 0 29px #fca120;
+    border: 1px solid #fca120;
+    border-radius: 13px;
+    opacity: 1;
+    margin: 10px 0;
+    padding: 10px 10px;
+}
+.login-submit {
+    background: #fca120 0 0 no-repeat padding-box;
+    box-shadow: 0 0 23px #fca120a3;
+    border: 1px solid #fca120;
+    border-radius: 15px;
+    opacity: 1;
+    padding: 15px 40px;
+    font-size: 14px;
+    text-align: left;
+    letter-spacing: 0;
+    color: #1d1d30;
+    font-weight: 600;
+}
+.login-submit:hover {
+    color: #1d1d30;
+}
+.submit-input {
+    margin: 55px 0 40px 0;
+}
+.login-to-Sign {
+    color: #fca120;
+}
+.login-to-Sign:hover {
+    color: #fca120;
+}
+.Signup-input-group input {
+    background: #1a1f26 0 0 no-repeat padding-box;
+    box-shadow: 0 0 9px #20fc9d;
+    border: 1px solid #20fc9d;
+    border-radius: 13px;
+    padding: 15px 25px;
+    margin: 5px 5px;
+    width: 100%;
+    opacity: 1;
+}
+.Signup-password .login-input-group input {
+    background: #1a1f26 0 0 no-repeat padding-box;
+    box-shadow: 0 0 15px #fca120;
+    border: 1px solid #fca120;
+    border-radius: 13px;
+    padding: 15px 25px;
+    margin: 5px 5px;
+    width: 100%;
+    opacity: 1;
+}
+.login-form-Forgot p {
+    font-size: 12px;
+}
+.Payment-Method-header {
+    background: #1a1f26 0 0 no-repeat padding-box;
+    box-shadow: 0 0 20px #0afff7;
+    align-items: center;
+    padding: 10px 20px;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.Payment-Method-header .row {
+    align-items: center;
+}
+.Wallet {
+    background: #1a1f26 0 0 no-repeat padding-box;
+    box-shadow: 0 0 11px #009caefa;
+    border: 1px solid #00cbff;
+    align-items: center;
+    border-radius: 9px;
+    width: fit-content;
+    padding: 0 30px;
+    display: flex;
+    height: 8vh;
+    opacity: 1;
+}
+.Wallet-text {
+    margin-top: 8px;
+    margin-left: -5px;
+}
+.Wallet-text p {
+    margin: -5px 0 0 20px;
+    font-size: 14px;
+    color: #fff;
+}
+.Wallet-amount {
+    color: #fff;
+    text-shadow: 0 0 13px #ffb300;
+}
+.Payment-Method-heading {
+    font: normal normal bold 29px/50px Roboto;
+    text-shadow: 0 0 13px #ffb300;
+    letter-spacing: 0;
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+}
+.Payment-Method-subheading {
+    text-align: center;
+}
+.position-thing {
+    right: 10px;
+    top: 5px;
+}
+.Payment-input-group input {
+    background: transparent radial-gradient(closest-side at 50% 50%, #472811 0, #0e0803 100%) 0 0 no-repeat padding-box;
+    box-shadow: 0 0 8px #fdb620;
+    border: 1px solid #fdb620;
+    border-radius: 9px;
+    padding: 5px 15px;
+    margin: 1px auto;
+    width: 100%;
+    opacity: 1;
+}
+.Price-Amount-heading {
+    text-align: center;
+    font: normal normal bold 36px/36px Roboto;
+    letter-spacing: 0;
+    color: #fff;
+    text-shadow: 0 0 28px #0080ff;
+    opacity: 1;
+}
+.row.counter-width {
+    max-width: 300px;
+    margin: auto;
+}
+.casino-timer p {
+    font-size: 16px;
+}
+.casino-timer h3 {
+    letter-spacing: 0;
+    color: #fff;
+    opacity: 1;
+    font-size: 40px;
+    line-height: 18px;
+    font-weight: 700;
+}
+.days h3 {
+    text-shadow: 0 0 13px #ffb300;
+}
+.hours h3 {
+    text-shadow: 0 0 13px #00ff3c;
+}
+.mins h3 {
+    text-shadow: 0 0 13px #ff00c4;
+}
+.secs h3 {
+    text-shadow: 0 0 13px #0080ff;
+}
+.leaderboard-search h4,
+.work-part h4 {
+    color: #20fc9d;
+    font-size: 26px;
+}
+.work-part {
+    padding: 80px 0;
+    display: flex;
+    align-items: baseline;
+}
+.how-it-works button,
+.tag-friend button {
+    background: #fca120 0 0 no-repeat padding-box;
+    box-shadow: 0 0 23px #fca120a3;
+    border: 1px solid #fca120;
+    border-radius: 13px;
+    opacity: 1;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.tag-friend button {
+    background: 0 0;
+    color: #fca120;
+    box-shadow: none;
+}
+.how-it-works button:hover {
+    background: 0 0;
+    border: 1px solid #fca120;
+    color: #fca120;
+}
+.competition-8 textarea.form-control {
+    background: 0 0;
+    height: 241px;
+    box-shadow: 0 0 4px #20fc9d;
+    border: 1px solid #20fc9d;
+    border-radius: 7px;
+    opacity: 1;
+}
+.leaderboard-search {
+    padding: 0 0 0;
+}
+.leaderboard-search form {
+    border: 1px solid #20fc9d;
+    border-radius: 7px;
+    opacity: 1;
+}
+.leaderboard-search input {
+    background: 0 0;
+    border: 0;
+}
+.leaderboard-search .input-group-append span {
+    background: 0 0;
+    border: none;
+    cursor: pointer;
+}
+.leaderboard-search .input-group-append span i {
+    color: #20fc9d;
+}
+.leaderboard-search .form-control:focus {
+    box-shadow: none;
+    background: 0 0;
+    color: #fff;
+}
+.table-avatar {
+    width: 20px;
+    height: 20px;
+}
+.table-avatar img {
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    border: 1px solid #fca120;
+}
+.account .table-avatar {
+    display: flex;
+    align-items: center;
+}
+.leaderboard-search.competition-9 {
+    padding: 0;
+}
+.leaderboard-search.user {
+    padding: 0;
+    margin-top: 200px;
+}
+.leaderboard {
+    box-shadow: 0 0 4px #20fc9d;
+    border: 1px solid #20fc9d;
+    border-radius: 7px;
+    opacity: 1;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.leaderboard .row {
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+.leaderboard h5 {
+    color: #fca120;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.player-data td,
+.player-data th {
+    letter-spacing: 0;
+    color: #fca120;
+    opacity: 1;
+    font-size: 14px;
+}
+.upload-document {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+.upload-document span {
+    color: #fff;
+    font-size: 10px;
+}
+.upload-document img {
+    width: 23px;
+    height: 23px;
+}
+.ENTRY-heading {
+    align-items: center;
+    justify-content: center;
+}
+.home-subheader {
+    align-items: center;
+    margin-bottom: 30px;
+}
+.footer-infotext {
+    font-size: 10px;
+}
+.goog-te-banner-frame {
+    display: none;
+}
+.home-table-footer-btns {
+    align-items: center;
+}
+.tag-friends button a {
+    color: #000;
+}
+.home-table-footer-btns-wrapper {
+    display: none;
+}
+.rotate-image-360 img {
+    transform: rotate(360deg);
+    top: 20px;
+}
+.how-it-works.skip-to-me {
+    float: right;
+}
+.skip-to-me-mobile {
+    display: none;
+}
+.see-post {
+    float: right;
+}
+h3.Price-Amount-heading.giveaway.sign-up-text {
+    font-size: 16px;
+}
+.leaderboard-bar.position h3 {
+    font-size: 14px !important;
+}
+.prize-button button {
+    background: #1a1f26 0 0 no-repeat padding-box;
+    box-shadow: 0 0 11px #009caefa;
+    border: 1px solid #00cbff;
+    opacity: 1;
+    color: #fff;
+    font-size: 14px;
+    padding: 16px 20px;
+    align-items: center;
+    border-radius: 13px;
+    font-weight: 700;
+}
+.prize-button button:hover {
+    color: #00cbff;
+}
+.prize-button i {
+    font-size: 14px;
+    color: #00cbff;
+    margin-right: 5px;
+}
+.leaderboard-bar {
+    background: transparent radial-gradient(closest-side at 50% 50%, #472811 0, #0e0803 100%) 0 0 no-repeat padding-box;
+    box-shadow: 0 0 8px #fdb620;
+    border: 1px solid #fdb620;
+    opacity: 1;
+}
+.leaderboard-bar h3 {
+    letter-spacing: 1.06px;
+    color: #efb94a;
+    text-shadow: 0 0 27px #efb94a;
+    opacity: 1;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.leaderboard-bar-table {
+    background: #1a1f26 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #00000029;
+    opacity: 1;
+}
+.leaderboard-bar-table h4 {
+    letter-spacing: 0.64px;
+    opacity: 1;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.table-title-bar {
+    color: #20fc9d;
+    padding: 5px 10px;
+}
+.leaderboard-spacing {
+    padding: 50px 0;
+}
+.leaderboard-details h4 {
+    letter-spacing: 0.64px;
+    color: #25f933;
+    opacity: 1;
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.leaderboard-details.blue,
+.leaderboard-details.dark-orange {
+    background: #071836 0 0 no-repeat padding-box;
+}
+.leaderboard-bar p {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 5px;
+    font-size: 14px;
+    color: #fca120;
+}
+.leaderboard-bar p span {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+}
+.col-12.leaderboard-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0;
+}
+.work-part.leaderboard-work {
+    padding: 40px 15px 20px;
+}
+.leaderboard-details.light-bg {
+    background: #02183e 0 0 no-repeat padding-box;
+}
+.leaderboard-details.blue h4 {
+    color: #fc2020;
+}
+.leaderboard-details.dark-blue h4 {
+    color: #5affee;
+}
+.leaderboard-details.dark-orange h4 {
+    color: #ffb300;
+}
+.leaderboard-details {
+    background: #02183e 0 0 no-repeat padding-box;
+    padding: 5px 10px;
+}
+.leaderboard-table {
+    max-height: 325px;
+    overflow: auto;
+}
+.leaderboard-table::-webkit-scrollbar {
+    width: 0;
+}
+.leaderboard-table.row:focus {
+    box-shadow: 0 0 6px #07e6ff;
+    border: 0.25px solid #07e6ff;
+    opacity: 1;
+}
+.leaderboard-spacing hr {
+    border-color: #fff;
+}
+.row.playing-buttons {
+    justify-content: flex-end;
+}
+.playing-buttons a button {
+    background: #fca120 0 0 no-repeat padding-box;
+    box-shadow: 0 0 23px #fca120a3;
+    border: 1px solid #fca120;
+    opacity: 1;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.playing-buttons a button:hover {
+    border: 1px solid #fca120;
+    color: #fca120;
+    background: #02183e;
+}
+.playing-buttons a button:focus {
+    outline: 0;
+}
+.show-table img {
+    position: absolute;
+    left: 45%;
+    bottom: -15px;
+    width: 26px;
+    z-index: 10;
+}
+.rotate-image img {
+    transform: rotate(180deg);
+    top: 20px;
+}
+.iframe-box iframe {
+    box-shadow: 0 0 4px #20fc9d;
+    border: 1px solid #20fc9d;
+    border-radius: 7px;
+    opacity: 1;
+    padding: 3px;
+}
+footer {
+    background: #1a1f26;
+    color: #fff;
+    text-shadow: 0 0 28px #0080ff;
+    font-weight: 400;
+    padding: 20px 0;
+}
+footer p {
+    margin-bottom: 0;
+}
+.insta-feed i {
+    font-size: 24px;
+    color: #fff;
+}
+.language-selector select {
+    background-color: transparent;
+    border: 1px solid #fca120;
+    border-radius: 7px;
+    color: #fff;
+}
+option {
+    border: 10px solid #fca120 !important;
+    background-color: #1d1d30;
+    border-radius: 7px;
+    margin-top: 20px;
+    color: #fca120;
+    opacity: 1;
+}
+.skip-button {
+    text-align: right;
+}
+.skip-to-me button {
+    background: 0 0;
+    border: 0 solid #fca120;
+    border-radius: initial;
+    opacity: 1;
+    padding: 0;
+    box-shadow: none;
+    color: #fca120;
+    font-weight: 700;
+    font-size: 16px;
+}
+.skip-to-me button:hover {
+    border: none;
+}
+.instagram span.input-group-text {
+    background: #1a1f26 0 0 no-repeat padding-box;
+    box-shadow: none;
+    border: none;
+    border-radius: 13px;
+    padding: 15px 20px;
+    margin: 5px 0;
+    width: 100%;
+    opacity: 1;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #fff;
+}
+.instagram.Signup-input-group {
+    box-shadow: 0 0 9px #20fc9d;
+    border: 1px solid #20fc9d;
+    border-radius: 13px;
+    padding: 0;
+    margin: 5px 0;
+}
+.instagram.Signup-input-group input {
+    background: #1a1f26 0 0 no-repeat padding-box;
+    box-shadow: none;
+    border: none;
+    border-radius: 13px;
+    padding: 15px 0;
+    margin: 5px 0;
+    width: 100%;
+    opacity: 1;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+}
+@media screen and (min-width: 768px) {
+    .prize-mobile,
+    .show-table {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .container-fluid.site-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container-fluid.site-wrapper .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .playing {
+        border-top: 1px solid #fca120;
+    }
+    .col-12.leaderboard-container {
+        margin: 0;
+        padding: 0 8px 0 0;
+    }
+    .home-table-footer-btns-wrapper {
+        display: block;
+    }
+    .skip-button {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .leaderboard-table {
+        max-height: 250px;
+    }
+    .user-tbl {
+        position: absolute;
+        left: 5px;
+        z-index: 1;
+        right: 5px;
+        background: #02183e;
+        touch-action: none !important;
+    }
+    .leaderboard-details {
+        align-items: center;
+    }
+    .col-12.how-it-works {
+        text-align: center;
+    }
+    .leaderboard-table {
+        padding-bottom: 0;
+    }
+    .work-part.leaderboard-work {
+        padding: 40px 5px 40px;
+    }
+    .casino-timer.leaderboard-timer h3 {
+        font-size: 20px;
+        margin-bottom: 0;
+        line-height: 24px;
+    }
+    .casino-timer.leaderboard-timer p {
+        font-size: 8px;
+        margin-bottom: 0;
+    }
+    .prize-button button {
+        margin-bottom: 0;
+        border-radius: 5px;
+        font-size: 8px;
+        padding: 8px 4px;
+    }
+    .prize-button {
+        justify-content: flex-start;
+    }
+    .prize-button i {
+        font-size: 10px;
+        margin-right: 2px;
+    }
+    .Payment-Method-header.leaderboard-header {
+        background: #1a1f26 0 0 no-repeat padding-box;
+        box-shadow: 0 0 20px #0afff7;
+        border-radius: 0;
+        align-items: center;
+        padding: 5px;
+        margin-top: 0;
+        opacity: 1;
+    }
+    .col-12.mobile-leaderboard,
+    .leaderboard-bar {
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+    .leaderboard-bar {
+        margin: 5px 0;
+    }
+    .leaderboard-bar h3 {
+        font-size: 12px;
+        padding: 5px;
+    }
+    .leaderboard-bar-table h4,
+    .leaderboard-details h4 {
+        letter-spacing: 0;
+        font-size: 12px;
+    }
+    .playing-buttons a button {
+        font-size: 16px;
+    }
+    .row.playing-buttons {
+        justify-content: center;
+    }
+    .leaderboard-details,
+    .table-title-bar {
+        padding: 5px;
+    }
+    .leaderboard-bar p {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+.work-form button.close:focus {
+    outline: 0;
+}
+.work-form .modal-header .close {
+    padding: 0.6rem;
+    margin: -0.7rem -1rem -1rem auto;
+    background: #fca120;
+    color: #fff;
+    border-top-right-radius: 14px;
+}
+.work-form .modal-content {
+    background: #1a1f26 0 0 no-repeat padding-box;
+    border: 1px solid #ff9100;
+    border-radius: 13px;
+    opacity: 1;
+}
+.work-form .modal-header {
+    border-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 32px;
+    text-shadow: 0 0 13px #ffb3;
+}
+.work-form .modal-body {
+    text-align: left;
+    padding-top: 0;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #ffb300;
+    opacity: 1;
+}
+.work-form .modal-dialog {
+    max-width: 700px;
+}
+@media screen and (max-width: 450px) {
+    .app main .wrapper .site-wrapper .row .leaderboard-container .user-tbl {
+        position: absolute;
+        left: 5px;
+        z-index: 1;
+        right: 5px;
+        background: #02183e;
+        height: auto;
+        padding: 10px 0;
+        touch-action: none !important;
+    }
+    .login-logo {
+        padding-top: 20px;
+    }
+    .skip-to-me-desktop-section {
+        display: none;
+    }
+    .skip-to-me-mobile {
+        display: block;
+    }
+    .see-post {
+        float: left;
+    }
+}
+table::-webkit-scrollbar {
+    height: 8px;
+}
+.table::-webkit-scrollbar-track {
+    background: 0 0;
+    border-radius: 100px;
+}
+.table::-webkit-scrollbar-thumb {
+    background: #20fc9d;
+    border-radius: 200px;
+}
+.table::-webkit-scrollbar-thumb:hover {
+    background: #20fc9d;
+}
+@media screen and (max-width: 768px) {
+    .Payment-Method-page {
+        height: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    select {
+        font-size: 14px;
+    }
+    .Payment-Method-header {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    .user-table td,
+    .user-table th {
+        min-width: 100px;
+    }
+    .player-data .table-responsive {
+        margin-top: 0;
+    }
+    .leaderboard-search.user {
+        margin-top: 20px;
+    }
+    .leaderboard.table-responsive-sm {
+        width: 750px;
+    }
+    .casino-timer h3 {
+        font-size: 46px;
+    }
+    .casino-timer p {
+        font-size: 16px;
+    }
+    .how-it-works button,
+    .tag-friend button {
+        padding: 5px 10px;
+        font-size: 10px;
+        border-radius: 7px;
+    }
+    .leaderboard-search h4,
+    .work-part h4 {
+        font-size: 16px;
+    }
+    .leaderboard h5 {
+        font-size: 14px;
+    }
+    .work-part {
+        padding: 30px 0;
+    }
+    .leaderboard-search {
+        padding: 0 0 15px;
+    }
+    .competition-8 textarea.form-control {
+        height: 166px;
+    }
+    .leaderboard {
+        margin-bottom: 30px;
+    }
+    .competition button {
+        font-weight: 700;
+        min-height: 135px;
+        font-size: 18px;
+    }
+    .Payment-Method-header {
+        background: 0 0;
+        box-shadow: none;
+        border-radius: 19px;
+        align-items: center;
+        padding: 0 10px;
+        opacity: 1;
+    }
+    .login-form-wrapper {
+        max-width: inherit;
+        margin: 0 auto;
+    }
+    .Payment-Method-heading {
+        text-align: center;
+        font-size: 26px;
+    }
+    .Payment-Method-header-text-area {
+        float: none;
+    }
+    .Payment-Method-subheading {
+        text-align: left;
+    }
+    .login-form {
+        padding: 5% 1%;
+    }
+    .Billing-input-group input {
+        background: transparent radial-gradient(closest-side at 50% 50%, #113047 0, #0e0803 100%) 0 0 no-repeat padding-box;
+        box-shadow: 0 0 8px #00cbff;
+        border: 1px solid #00cbff;
+        border-radius: 9px;
+        padding: 5px 15px;
+        margin: 1px auto;
+        width: 100%;
+        opacity: 1;
+    }
+    .Postcode-input input {
+        width: 100%;
+    }
+    .vertical-line {
+        display: none;
+    }
+    .save-payment-method {
+        margin: 20px 0 40px 10px;
+        max-width: 570px;
+    }
+    .Payment-Method-header-text-area {
+        margin-top: 30px;
+    }
+    .work-part.leaderboard-work.post-section {
+        display: none;
+    }
+}
+@media screen and (max-width: 425px) {
+    .user-tbl {
+        position: relative;
+        left: 5px;
+        z-index: 1;
+        right: 5px;
+        background: #02183e;
+        touch-action: none !important;
+    }
+    .leaderboard-container .leaderboard-work .how-it-works.tag-friends {
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .Signup-input-group input {
+        background: #1a1f26 0 0 no-repeat padding-box;
+        box-shadow: 0 0 9px #20fc9d;
+        border: 1px solid #20fc9d;
+        border-radius: 13px;
+        padding: 15px 25px;
+        margin: 5px 0;
+        width: 100%;
+        opacity: 1;
+    }
+    .Clicks {
+        background: #1a1f26 0 0 no-repeat padding-box;
+        box-shadow: 0 0 29px #fca120;
+        border: 5px solid #fca120;
+        border-radius: 13px;
+        text-align: center;
+        padding: 25px;
+        opacity: 1;
+    }
+    .Players {
+        background: #1a1f26 0 0 no-repeat padding-box;
+        box-shadow: 0 0 29px #fca120;
+        border: 5px solid #fca120;
+        border-radius: 13px;
+        text-align: center;
+        padding: 25px;
+        opacity: 1;
+    }
+    .save-payment-method .save-payment-method-btn {
+        display: block;
+        align-items: center;
+    }
+    .payment-method-icon {
+        display: block;
+        align-items: center;
+    }
+    .payment-method-icon p {
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width: 373px) {
+    .login-form .d-flex .Clicks-wrapper {
+        margin-right: 0.5rem !important;
+    }
+    .Clicks {
+        background: #1a1f26 0 0 no-repeat padding-box;
+        box-shadow: 0 0 29px #fca120;
+        border: 5px solid #fca120;
+        border-radius: 13px;
+        text-align: center;
+        padding: 25px;
+        opacity: 1;
+    }
+    .Players {
+        background: #1a1f26 0 0 no-repeat padding-box;
+        box-shadow: 0 0 29px #fca120;
+        border: 5px solid #fca120;
+        border-radius: 13px;
+        text-align: center;
+        padding: 25px;
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 333px) {
+    .Clicks {
+        background: #1a1f26 0 0 no-repeat padding-box;
+        box-shadow: 0 0 29px #fca120;
+        border: 5px solid #fca120;
+        border-radius: 13px;
+        text-align: center;
+        padding: 15px;
+        opacity: 1;
+    }
+    .Players {
+        background: #1a1f26 0 0 no-repeat padding-box;
+        box-shadow: 0 0 29px #fca120;
+        border: 5px solid #fca120;
+        border-radius: 13px;
+        text-align: center;
+        padding: 15px;
+        opacity: 1;
+    }
+}
+@media screen and (min-width: 600px) {
+    .player-data table {
+        display: grid;
+        justify-content: center;
+    }
+}
+.carousel-inner img {
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    max-width: 400px;
+    max-height: 400px;
+}
+.iframe-box {
+    border: 3px solid #20fc9d;
+    border-radius: 13px;
+    padding: 10px;
+}
+.how-it-works.tag-friends {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.how-it-works.tag-friends:hover {
+    background: #1d1d30;
+    border-radius: 13px;
+}
+h3.Price-Amount-heading.giveaway {
+    font-size: 20px;
+}
+.dark-red.leaderboard-details h4 {
+    color: red !important;
+}

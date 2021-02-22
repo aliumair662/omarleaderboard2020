@@ -1,0 +1,5 @@
+[04-Feb-2021 23:11:47 America/Boise] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home4/hodgzamy/public_html/playcasinouser/app/Providers/AppServiceProvider.php on line 7
+[04-Feb-2021 23:12:06 America/Boise] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\AuthServiceProvider' not found in /home4/hodgzamy/public_html/playcasinouser/app/Providers/AuthServiceProvider.php on line 8
+[04-Feb-2021 23:12:22 America/Boise] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\EventServiceProvider' not found in /home4/hodgzamy/public_html/playcasinouser/app/Providers/EventServiceProvider.php on line 10
+[04-Feb-2021 23:12:28 America/Boise] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\RouteServiceProvider' not found in /home4/hodgzamy/public_html/playcasinouser/app/Providers/RouteServiceProvider.php on line 8
+[04-Feb-2021 23:12:49 America/Boise] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home4/hodgzamy/public_html/playcasinouser/app/Providers/BroadcastServiceProvider.php on line 8

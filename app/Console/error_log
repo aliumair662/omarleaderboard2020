@@ -1,0 +1,1 @@
+[04-Feb-2021 14:08:17 America/Boise] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home4/hodgzamy/public_html/playcasinouser/app/Console/Kernel.php on line 8
