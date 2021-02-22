@@ -513,6 +513,7 @@
             e.preventDefault();
             if($("#mytable").hasClass("d-none")){
                 $("#mytable").removeClass("d-none");
+                $(".buyer-header").addClass("d-none");
                 $(this).removeClass('rotate-image-360');
                 $(this).addClass('rotate-image');
                 $(".work-part").addClass('post-section');
@@ -521,6 +522,7 @@
                 $(this).removeClass('rotate-image');
                 $(this).addClass('rotate-image-360');
                 $(".work-part").removeClass('post-section');
+                $(".buyer-header").removeClass("d-none");
             }
                 });
 
@@ -563,4 +565,3 @@ The Leaderboard - Live Leaderboard
 @section('description')
 Tag your friends to earn points. Points equals prizes.
 @endsection
-
