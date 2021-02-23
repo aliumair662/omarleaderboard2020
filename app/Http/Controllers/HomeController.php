@@ -171,7 +171,7 @@ class HomeController extends Controller
                     $awaymentiones=$leaderboardleaderboardmentions[0]->totalMentiones;
                 }
 
-                $leaderboard->awaymessage=__('message.you-are') .$awaymentiones.__('message.mentions-away-from-position'). '1.';
+                $leaderboard->awaymessage=__('message.you-are').' '.$awaymentiones.' '.__('message.mentions-away-from-position'). '1.';
 
             }
             $leaderboard->leaderboard_end_date =Carbon::createFromTimestamp($leaderboard->endtime)
@@ -288,11 +288,11 @@ class HomeController extends Controller
                         $awaymentiones=$topermentiones;
                     }
                    // $awaymessage='You\'re  '.$awaymentiones.'  mentions away from position 1.';
-                    $awaymessage= __('message.you-are'). $awaymentiones.__('message.mentions-away-from-position'). '1.';
+                    $awaymessage= __('message.you-are').' '.$awaymentiones.' '.__('message.mentions-away-from-position'). '1.';
                 }else{
                     $awaymentiones=$topermentiones;
                    // $awaymessage='You\'re  '.$awaymentiones.'  mentions away from position 1.';
-                    $awaymessage= __('message.you-are'). $awaymentiones.__('message.mentions-away-from-position'). '1.';
+                    $awaymessage= __('message.you-are').' '. $awaymentiones.' '.__('message.mentions-away-from-position'). '1.';
                 }
             }
             return response()->json(['mentions'=>$leaderboard->post_mentions,'myposition'=>$myposition,'totalposition'=>$totalposition,'awaymessage'=>$awaymessage,'code'=>200],200);

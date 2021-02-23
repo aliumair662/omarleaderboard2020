@@ -74,7 +74,7 @@
 
                         <div class="leaderboard-bar">
                              @if(!empty($leaderboard->myposition))
-                           <p id="onlederboard" >{{__('message.you-are')}} <span class="mr-1 ml-1" id="myposition">{{$leaderboard->myposition}}</span> {{__('message.out-of')}} <span id="total-position">{{$leaderboard->totalposition}}</span> {{__('message.players')}}</p>
+                           <p id="onlederboard" >{{__('message.you-are')}} <span class="mr-1 ml-1" id="myposition">&nbsp;{{$leaderboard->myposition}}&nbsp;</span> {{__('message.out-of')}} <span id="total-position">{{$leaderboard->totalposition}}</span> {{__('message.players')}}</p>
                             @else
                                 <p id="notonlederboard">{{__('message.not-on-the-live-leaderboard')}}</p>
                             @endif
