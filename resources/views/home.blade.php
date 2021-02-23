@@ -32,7 +32,6 @@
                                 </form>
 								</div>
                             </div>
-
                                 <div class="col-md-6 col-6 order-md-2 order-2 casino-timer leaderboard-timer text-center counter-width">
 
                                     <div class="row counter-width">
@@ -89,7 +88,57 @@
 
 
                     </div>
+                    <div class="col-12 col-md-12 order-md-4 order-6 mt-4 mobile-leaderboard" style="display: none">
 
+                        <div class="Payment-Method-header leaderboard-header buyer-header position-relative">
+
+                            <div class="row">
+
+                                <div class="col-md-3 col-3 order-md-1 desktop order-1 text-left">
+                                    <div class="prize-button exit-button">
+                                    <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();"><button class="btn">Buy Time</button></a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-6 order-md-2 order-2 casino-timer leaderboard-timer text-center counter-width">
+
+                                    <div class="row counter-width buy-time">
+
+                                        <div class="col-12">
+
+                                            <p>COMPETITION ENDS IN</p>
+
+                                        </div>
+
+                                        <div class="col-4 hours"><h3 id="hours">12</h3><p>Hours</p></div>
+
+                                        <div class="col-4 mins"><h3 id="mins">26</h3><p>Mins</p></div>
+
+                                        <div class="col-4 secs"><h3 id="secs">05</h3><p>Secs</p></div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3 col-3 order-3 order-md-3 prize-table text-right">
+
+                                    <div class="prize-button play-button">
+
+                                        <a href="#"><img class="changeimage playimage" src="assets/logos/play-button.svg" alt=""></a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                     <div class="col-12 col-md-6 order-md-4 order-6">
 
                         <div class="row work-part leaderboard-work post-section">
@@ -145,151 +194,152 @@
 
                     </div>
 
-                    <div class="col-12 col-md-6 order-md-5 order-4 leaderboard-spacing mobile-leaderboard">
+                    <div class="col-12 col-md-6 order-md-7 order-5 leaderboard-spacing mobile-leaderboard">
 
-                    <div class="leaderboard-bar">
+                        <div class="leaderboard-bar">
 
                         <h3>{{__('message.top-100')}}</h3>
 
-                    </div>
-
-                    <div class="show-table rotate-image" >
-
-                        <img src="assets/logos/Group 88.svg" alt="">
-
-                    </div>
-                    <div class="col-12 col-md-6 order-md-6 order-5 leaderboard-container position-relative" id="mytable">
-
-<div class="user-tbl">
-
-    <div class="row leaderboard-bar-table  table-title-bar m-0">
-
-        <div class="col-2">
-
-            <div class="prize">
-
-                <h4>Position</h4>
-
-            </div>
-
-        </div>
-
-        <div class="col-3">
-
-            <div class="name">
-
-                <h4>Username</h4>
-
-            </div>
-
-        </div>
-
-        <div class="col-7 text-right">
-
-            <div class="points">
-
-                <h4>Mentions</h4>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="leaderboard-table" id="leaderboard-table">
-
-        @if(!empty($leaderboard->post_mentions))
-
-            <?php
-            /**dark-orange => orange **/
-            /**light-bg => green **/
-            $color_array = array('light-bg', 'dark-orange', 'dark-red');
-            $k = count($color_array);
-            $i=0;
-            $p=1;
-            $FinalMentions=$leaderboard->post_mentions;
-            $class='dark-red';
-            ?>
-
-
-
-            @foreach($FinalMentions as $Mentions)
-
-                <?php
-                    if($p>=1 && $p<=3){
-                        $class='light-bg';
-                    }elseif ($p>=4 && $p<=10){
-                        $class='dark-orange';
-                    }else{
-                        $class='dark-red';
-                    }
-              //  $class= $color_array[$i % $k];
-
-                ?>
-
-                <div class="row leaderboard-details mentions-row {{$class}} m-0 data-row ownerId_{{$Mentions->ownerId}}"  data-username="{{$Mentions->ownername}}" data-mention="{{$Mentions->totalMentiones}}" >
-
-                    <div class="col-1">
-
-                        <div class="prize">
-
-                           <h4><span class="poition-no">{{$p}}</span>
-                                                        </h4>
-
                         </div>
 
-                    </div>
-                    <div class="col-1">
-                              <img src="{{$Mentions->ownerflag}}" alt="" style="width: 20px;height: 20px;border-radius:50px">
-                    </div>
+                        <div class="show-table rotate-image" >
 
-                    <div class="col-3">
+                            <img src="assets/logos/Group 88.svg" alt="">
 
-                        <div class="name">
+                        </div>
+                    <div class="col-12 col-md-6 order-md-6 order-5 leaderboard-container position-relative" id="mytable">
 
-                            <div class="account">
+                        <div class="user-tbl">
 
-                                <div class="table-avatar">
+                            <div class="row leaderboard-bar-table  table-title-bar m-0">
 
-                                    <img class="mr-2" src="{{$Mentions->ownername_profile_pic_url}}" alt="">
+                                <div class="col-2">
 
-                                    <span><h4>{{$Mentions->ownername}}</h4></span>
+                                    <div class="prize">
+
+                                        <h4>Position</h4>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-3">
+
+                                    <div class="name">
+
+                                        <h4>Username</h4>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-7 text-right">
+
+                                    <div class="points">
+
+                                        <h4>Mentions</h4>
+
+                                    </div>
 
                                 </div>
 
                             </div>
 
+                            <div class="leaderboard-table" id="leaderboard-table">
+
+                                @if(!empty($leaderboard->post_mentions))
+
+                                    <?php
+                                    /**dark-orange => orange **/
+                                    /**light-bg => green **/
+                                    $color_array = array('light-bg', 'dark-orange', 'dark-red');
+                                    $k = count($color_array);
+                                    $i=0;
+                                    $p=1;
+                                    $FinalMentions=$leaderboard->post_mentions;
+                                    $class='dark-red';
+                                    ?>
 
 
-                        </div>
 
-                    </div>
+                                    @foreach($FinalMentions as $Mentions)
+
+                                        <?php
+                                            if($p>=1 && $p<=3){
+                                                $class='light-bg';
+                                            }elseif ($p>=4 && $p<=10){
+                                                $class='dark-orange';
+                                            }else{
+                                                $class='dark-red';
+                                            }
+                                    //  $class= $color_array[$i % $k];
+
+                                        ?>
+
+                                        <div class="row leaderboard-details mentions-row {{$class}} m-0 data-row ownerId_{{$Mentions->ownerId}}"  data-username="{{$Mentions->ownername}}" data-mention="{{$Mentions->totalMentiones}}" >
+
+                                            <div class="col-1">
+
+                                                <div class="prize">
+
+                                                <h4><span class="poition-no">{{$p}}</span>
+                                                                                </h4>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-1">
+                                                    <img src="{{$Mentions->ownerflag}}" alt="" style="width: 20px;height: 20px;border-radius:50px">
+                                            </div>
+
+                                            <div class="col-3">
+
+                                                <div class="name">
+
+                                                    <div class="account">
+
+                                                        <div class="table-avatar">
+
+                                                            <img class="mr-2" src="{{$Mentions->ownername_profile_pic_url}}" alt="">
+
+                                                            <span><h4>{{$Mentions->ownername}}</h4></span>
+
+                                                        </div>
+
+                                                    </div>
 
 
 
-                    <div class="col-6 text-right">
+                                                </div>
 
-                        <div class="points">
+                                            </div>
 
-                            <h4 id="total_mentions_{{$Mentions->ownerId}}">{{$Mentions->totalMentiones}}</h4>
 
-                        </div>
 
-                    </div>
+                                            <div class="col-6 text-right">
 
-                </div>
+                                                <div class="points">
 
-                <?php
+                                                    <h4 id="total_mentions_{{$Mentions->ownerId}}">{{$Mentions->totalMentiones}}</h4>
 
-                $i++;
+                                                </div>
 
-                $p++;
+                                            </div>
 
-                ?>
+                                        </div>
 
-            @endforeach
+                                        <?php
 
-        @endif
+                                        $i++;
+
+                                        $p++;
+
+                                        ?>
+
+                                    @endforeach
+
+                                @endif
+
 
     </div>
      <div class="col-12 col-md-12 order-md-5 order-7 leaderboard-container skip-to-me-desktop-section">
@@ -308,15 +358,15 @@
 
                         <a href="#" class="see-post"> <button type="link">{{__('message.continue-playing')}}</button></a>
 
-                </div>
-            </div>
-        </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-    </div>
+                            </div>
 
-</div>
+                        </div>
 
-</div>
+                    </div>
 
                 </div>
 
@@ -445,12 +495,25 @@
 
     <script>
 
-
+        $(document).ready(function(){
+            $(".changeimage").click(function(){
+                if($(this).hasClass('playimage')){
+                    $(this).attr("src", "assets/logos/pause-button.svg");
+                    $(this).removeClass('playimage');
+                    $(this).addClass('pauseimage');
+                }else{
+                    $(this).attr("src", "assets/logos/play-button.svg");
+                    $(this).removeClass('pauseimage');
+                    $(this).addClass('playimage');
+                }
+            });    
+        });
 
         $(".show-table").click(function(e){
             e.preventDefault();
             if($("#mytable").hasClass("d-none")){
                 $("#mytable").removeClass("d-none");
+                $(".buyer-header").addClass("d-none");
                 $(this).removeClass('rotate-image-360');
                 $(this).addClass('rotate-image');
                 $(".work-part").addClass('post-section');
@@ -459,6 +522,7 @@
                 $(this).removeClass('rotate-image');
                 $(this).addClass('rotate-image-360');
                 $(".work-part").removeClass('post-section');
+                $(".buyer-header").removeClass("d-none");
             }
                 });
 
@@ -501,4 +565,3 @@ The Leaderboard - Live Leaderboard
 @section('description')
 Tag your friends to earn points. Points equals prizes.
 @endsection
-

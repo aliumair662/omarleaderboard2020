@@ -617,6 +617,23 @@ option {
     border-bottom-left-radius: 0;
     border-left: 0;
 }
+.play-button img {
+    width: 51px;
+}
+.buy-time h3 {
+    font-size: 30px;
+}
+.buy-time p{
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+.row.counter-width.buy-time {
+    max-width: 170px;
+}
+.Payment-Method-header.buyer-header {
+    padding: 5px 20px;
+    margin-bottom: 0px;
+}
 @media screen and (min-width: 768px) {
     .prize-mobile,
     .show-table {
@@ -624,6 +641,9 @@ option {
     }
 }
 @media screen and (max-width: 767px) {
+    .play-button img {
+        width: 30px;
+    }
     .container-fluid.site-wrapper {
         padding-left: 0;
         padding-right: 0;
