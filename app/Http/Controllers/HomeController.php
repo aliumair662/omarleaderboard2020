@@ -124,6 +124,10 @@ class HomeController extends Controller
                     $leaderboardmentions->ownerflag=url("/assets/logos/annony.svg");
                     if(!empty($user)){
                         $leaderboardmentions->ownerflag=($user->flag != '') ? $user->flag : url("/assets/logos/annony.svg");
+                        if($user->country=='Kosovo'){
+                            $leaderboardmentions->ownerflag=url("/assets/logos/kosovo.svg");
+                        }
+
                     }
                     $leaderboardmentions->ownername=$owner->ownername;
                     $leaderboardmentions->ownername_profile_pic_url=$owner->ownername_profile_pic_url;
@@ -239,6 +243,9 @@ class HomeController extends Controller
                     $leaderboardmentions->ownerflag=url("/assets/logos/annony.svg");
                     if(!empty($user)){
                         $leaderboardmentions->ownerflag=($user->flag != '') ? $user->flag : url("/assets/logos/annony.svg");
+                        if($user->country=='Kosovo'){
+                            $leaderboardmentions->ownerflag=url("/assets/logos/kosovo.svg");
+                        }
                     }
                     $leaderboardmentions->ownername=$owner->ownername;
                     $leaderboardmentions->ownername_profile_pic_url=$owner->ownername_profile_pic_url;
