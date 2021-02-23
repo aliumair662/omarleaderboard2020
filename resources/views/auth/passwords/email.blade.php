@@ -9,7 +9,7 @@
                 <div class="login-form-wrapper">
                     <div class="login-form">
                         <div class="login-logo text-center mb-4">
-                             <h3 class="Price-Amount-heading giveaway">Forgot your password? Don’t worry. We’ll send you a reset link right away.</h3>
+                             <h3 class="Price-Amount-heading giveaway">{{__('message.forgot-password-giveaway')}}</h3>
                         </div>
                         @if (session('status'))
                             <div class="alert alert-success" role="alert">
@@ -20,7 +20,7 @@
                         <form method="POST" action="{{ route('password.email') }}">
                             @csrf
                             <div class="Signup-input-group">
-                                <input id="email" type="email" placeholder="Email" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <input id="email" type="email" placeholder="{{__('message.email')}}" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                 @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -31,7 +31,7 @@
                             <div class="Signup-password mt-4 pt-1">
                                 <div class="login-input-group text-center submit-input">
                                     <button type="submit" class="login-submit">
-                                        Send Password Reset Link
+                                        {{__('message.send-password-link')}}
                                     </button>
                                 </div>
                             </div>

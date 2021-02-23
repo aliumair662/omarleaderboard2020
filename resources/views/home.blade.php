@@ -26,7 +26,7 @@
                             <div class="col-md-3 col-3 order-md-1 desktop order-1 text-left">
 								<div class="prize-button exit-button">
 								<a href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"><button class="btn"><i class="fa fa-sign-out-alt"></i>Exit Game</button></a>
+                                                     document.getElementById('logout-form').submit();"><button class="btn"><i class="fa fa-sign-out-alt"></i>{{__('message.exit-game')}}</button></a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
                                 </form>
@@ -39,17 +39,17 @@
 
                                         <div class="col-12">
 
-                                            <p>COMPETITION ENDS IN</p>
+                                            <p>{{__('message.competitions-end-in')}}</p>
 
                                         </div>
 
-                                        <div class="col-3 days"><h3 id="days">05</h3><p>Days</p></div>
+                                        <div class="col-3 days"><h3 id="days">05</h3><p>{{__('message.days')}}</p></div>
 
-                                        <div class="col-3 hours"><h3 id="hours">12</h3><p>Hours</p></div>
+                                        <div class="col-3 hours"><h3 id="hours">12</h3><p>{{__('message.hours')}}</p></div>
 
-                                        <div class="col-3 mins"><h3 id="mins">26</h3><p>Mins</p></div>
+                                        <div class="col-3 mins"><h3 id="mins">26</h3><p>{{__('message.mins')}}</p></div>
 
-                                        <div class="col-3 secs"><h3 id="secs">05</h3><p>Secs</p></div>
+                                        <div class="col-3 secs"><h3 id="secs">05</h3><p>{{__('message.secs')}}</p></div>
 
                                     </div>
 
@@ -59,7 +59,7 @@
 
                                     <div class="prize-button">
 
-                                        <button class="btn"><i class="fa fa-gift"></i><a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODU1MDg1OTExNDY4MDI3?igshid=wu57rjjq2cco&story_media_id=2504848121957656095" target="_blank" style="color: white">See Prizes</a></button>
+                                        <button class="btn"><i class="fa fa-gift"></i><a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODU1MDg1OTExNDY4MDI3?igshid=wu57rjjq2cco&story_media_id=2504848121957656095" target="_blank" style="color: white">{{__('message.see-prizes')}}</a></button>
 
                                     </div>
 
@@ -75,9 +75,9 @@
 
                         <div class="leaderboard-bar">
                              @if(!empty($leaderboard->myposition))
-                           <p id="onlederboard" >You are <span class="mr-1 ml-1" id="myposition">{{$leaderboard->myposition}}</span> out of <span id="total-position">{{$leaderboard->totalposition}}</span> players</p>
+                           <p id="onlederboard" >{{__('message.you-are')}} <span class="mr-1 ml-1" id="myposition">{{$leaderboard->myposition}}</span> {{__('message.out-of')}} <span id="total-position">{{$leaderboard->totalposition}}</span> {{__('message.players')}}</p>
                             @else
-                                <p id="notonlederboard">You're not on live leaderboard, start tagging your friends to appear in live leaderboard.</p>
+                                <p id="notonlederboard">{{__('message.not-on-the-live-leaderboard')}}</p>
                             @endif
                         </div>
 
@@ -96,12 +96,12 @@
 
                             <div class="col-6">
 
-                                <h4>ENTRY POST</h4>
+                                <h4>{{__('message.entry-post')}}</h4>
 
                             </div>
                             <div class="col-6 text-right mb-3">
                                 <div class="how-it-works" data-toggle="modal" data-target="#gamerule1">
-                                        <a href="#"><button type="link">How It Works</button></a>
+                                        <a href="#"><button type="link">{{__('message.how-it-works')}}</button></a>
                                 </div>
                             </div>
 
@@ -136,7 +136,7 @@
 
                             <div class="how-it-works tag-friends">
                                 
-                                    <a href="{{$leaderboard->post_url}}"><button type="link">Tag Friends Now</button></a>
+                                    <a href="{{$leaderboard->post_url}}"><button type="link">{{__('message.tag-friends-now')}}</button></a>
                                 
 
                             </div>
@@ -149,7 +149,7 @@
 
                     <div class="leaderboard-bar">
 
-                        <h3>Leaderboard- Top 100</h3>
+                        <h3>{{__('message.top-100')}}</h3>
 
                     </div>
 
@@ -301,12 +301,12 @@
     <div class="col-12 col-md-12">
           <div class="row">
             <div class="col-6 col-sm-6  d-none d-md-none">
-                <div class="how-it-works see-post"> <button>See Post</button></div>
+                <div class="how-it-works see-post"> <button>{{__('message.see-post')}}</button></div>
             </div>
             <div class="col-12 col-sm-12 d-flex pt-2 pb-2 playing" style="justify-content: flex-end;">
             <div class="how-it-works d-none d-md-none d-sm-block d-block playings">
 
-                        <a href="#" class="see-post"> <button type="link">Continue Playing</button></a>
+                        <a href="#" class="see-post"> <button type="link">{{__('message.continue-playing')}}</button></a>
 
                 </div>
             </div>
@@ -336,7 +336,7 @@
 
                 <div class="modal-header">
 
-                    <h5 class="gamerule modal-title" id="exampleModalLongTitle">How It Works</h5>
+                    <h5 class="gamerule modal-title" id="exampleModalLongTitle">{{__('message.how-it-works')}}</h5>
 
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 

@@ -9,12 +9,12 @@
                     <input type="hidden" name="active-leaderboad-single" id="active-leaderboad-single" value="{{(!empty($leaderboard->active) && $leaderboard->active==1) ? $leaderboard->id : ''}}">
                     <div class="login-form">
                         <div class="login-logo  text-center mb-5">
-                         <h3 class="Price-Amount-heading giveaway">Log in to see our live leaderboard giveaway</h3>
+                         <h3 class="Price-Amount-heading giveaway">{{__('message.login-giveaway')}}</h3>
                         </div>
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
                             <div class="login-input-group">
-                                <input id="email" type="email" placeholder="Email" class="login-input @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"  autocomplete="email" required autofocus>
+                                <input id="email" type="email" placeholder="{{__('message.email')}}" class="login-input @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"  autocomplete="email" required autofocus>
 
                                 @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -23,7 +23,7 @@
                                 @enderror
                             </div>
                             <div class="login-input-group">
-                                <input id="password" type="password" placeholder="Password" class="login-input @error('password') is-invalid @enderror" name="password"  autocomplete="current-password" required>
+                                <input id="password" type="password" placeholder="{{__('message.password')}}" class="login-input @error('password') is-invalid @enderror" name="password"  autocomplete="current-password" required>
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -32,7 +32,7 @@
                             </div>
                            
                             <div class="login-input-group " style="display: none;">
-                                <input id="instagramUsername" type="text" placeholder="instagram Username" class="@error('instagramUsername') is-invalid @enderror" name="instagramUsername" value="{{ old('instagramUsername') }}"  autocomplete="name" autofocus>
+                                <input id="instagramUsername" type="text" placeholder="{{__('message.instagram-username')}}" class="@error('instagramUsername') is-invalid @enderror" name="instagramUsername" value="{{ old('instagramUsername') }}"  autocomplete="name" autofocus>
                                 @error('instagramUsername')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -47,16 +47,16 @@
 
                             <div class="login-input-group text-center submit-input">
                                 <button type="submit" class="login-submit">
-                                    {{ __('Login') }}
+                                    {{__('message.login-button')}}
                                 </button>
                             </div>
                         </form>
                         <div class="login-form-Forgot text-center">
-                            <a href="{{ route('password.request') }}" class="login-Forgot text-white"><u>Forgot Password?</u></a>
+                            <a href="{{ route('password.request') }}" class="login-Forgot text-white"><u>{{__('message.login-Forgot')}}</u></a>
                         </div>
                         <div class="mt-5 login-form-Forgot text-center">
                             <p>
-                                Don't have an account? <a href="{{route('register')}}" class="login-to-Sign"><u>Sign up</u></a>
+                                {{__('message.login-dont-have-account')}} <a href="{{route('register')}}" class="login-to-Sign"><u>{{__('message.login-to-Sign')}}</u></a>
                             </p>
                         </div>
                     </div>

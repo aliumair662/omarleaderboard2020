@@ -10,7 +10,7 @@
                     <div class="login-form-wrapper">
                         <div class="login-form">
                             <div class="login-logo text-center mb-4">
-                                <h3 class="Price-Amount-heading giveaway sign-up-text">First let's create an account so you can see the leaderboard live!</h3>
+                                <h3 class="Price-Amount-heading giveaway sign-up-text">{{__('message.sign-giveaway')}}</h3>
                                 @if (session('error'))
                                     <div class="alert alert-danger">
                                         {{ session('error') }}
@@ -20,7 +20,7 @@
                             <form method="POST" action="{{ route('register') }}">
                                 @csrf
                                 <div class="Signup-input-group">
-                                    <input type="text" name="firstname" placeholder="First Name">
+                                    <input type="text" name="firstname" placeholder="{{__('message.firstname')}}">
                                     @error('firstname')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -29,7 +29,7 @@
 
                                 </div>
                                 <div class="Signup-input-group">
-                                    <input type="text" name="lastname" placeholder="Last Name">
+                                    <input type="text" name="lastname" placeholder="{{__('message.lastname')}}">
                                     @error('lastname')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -46,7 +46,7 @@
                                 </div>
 
                                 <div class="Signup-input-group">
-                                    <input id="email" type="email" placeholder="Email" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                    <input id="email" type="email" placeholder="{{__('message.email')}}" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                     @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -56,7 +56,7 @@
                                 </div>
                                 <div class="Signup-password mt-4 pt-1">
                                     <div class="login-input-group">
-                                        <input id="password" type="password" placeholder="Password" class="login-input @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                        <input id="password" type="password" placeholder="{{__('message.password')}}" class="login-input @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
                                         @error('password')
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -64,11 +64,11 @@
                                         @enderror
                                     </div>
                                     <div class="login-input-group">
-                                        <input id="password-confirm" type="password" placeholder="Confirm Password" class="login-input" name="password_confirmation" required autocomplete="new-password">
+                                        <input id="password-confirm" type="password" placeholder="{{__('message.password_confirmation')}}" class="login-input" name="password_confirmation" required autocomplete="new-password">
                                     </div>
                                     <div class="mt-5 login-form-Forgot text-left">
                                         <p>
-                                            <input type="radio" class="Sign-radio mr-2">I agree with the <a href="#" class="login-to-Sign"><u>Terms & Conditions</u></a>
+                                            <input type="radio" class="Sign-radio mr-2">{{__('message.agree')}} <a href="#" class="login-to-Sign"><u>{{__('message.terms&conditions')}}</u></a>
                                         </p>
                                     </div>
                                     <div class="login-input-group text-center submit-input">
@@ -78,7 +78,7 @@
                                     </div>
                                     <div class="mt-5 login-form-Forgot text-center">
                                 <p>
-                                    Already have an account? <a href="{{route('login')}}" class="login-to-Sign"><u>Sign in</u></a>
+                                    {{__('message.already-have-account')}} <a href="{{route('login')}}" class="login-to-Sign"><u>{{__('message.Sign-in')}}</u></a>
                                 </p>
                             </div>
                                 </div>

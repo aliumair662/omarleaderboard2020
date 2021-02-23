@@ -85,7 +85,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     </div>
                     <div class="col-12 text-center">
-                        <p class="footer-infotext">The Leaderboard.io is a decentralised gaming platform. Players can win cash prizes and luxury goods by playing The Leaderboard games. Our games are accessible worldwide. Cash prizes will be paid out via Paypal and all non cash prizes will be posted worldwide free of charge. All games are based on skill and not by chance. We are not regulated by the gambling commission. </p>
+                        <p class="footer-infotext">{{__('message.footer-text')}}</p>
                     </div>
                 </div>
             </div>
