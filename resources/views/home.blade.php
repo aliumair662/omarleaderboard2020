@@ -25,9 +25,9 @@
 
                             <div class="col-md-3 col-3 order-md-1 desktop order-1 text-left">
 								<div class="prize-button exit-button">
-								<a href="{{ route('logout') }}" onclick="event.preventDefault();
+								<a href="{{ route('logout',app()->getLocale()) }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"><button class="btn"><i class="fa fa-sign-out-alt"></i>{{__('message.exit-game')}}</button></a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                <form id="logout-form" action="{{ route('logout',app()->getLocale()) }}" method="POST" class="d-none">
                                     @csrf
                                 </form>
 								</div>
@@ -96,9 +96,9 @@
 
                                 <div class="col-md-3 col-3 order-md-1 desktop order-1 text-left">
                                     <div class="prize-button exit-button">
-                                    <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                    <a href="{{ route('logout',app()->getLocale()) }}" onclick="event.preventDefault();
                                                         document.getElementById('logout-form').submit();"><button class="btn">Buy Time</button></a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout',app()->getLocale()) }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                     </div>

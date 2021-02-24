@@ -11,7 +11,7 @@
                         <div class="login-logo  text-center mb-5">
                          <h3 class="Price-Amount-heading giveaway">{{__('message.login-giveaway')}}</h3>
                         </div>
-                        <form method="POST" action="{{ route('login') }}">
+                        <form method="POST" action="{{ route('login',app()->getLocale()) }}">
                             @csrf
                             <div class="login-input-group">
                                 <input id="email" type="email" placeholder="{{__('message.email')}}" class="login-input @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"  autocomplete="email" required autofocus>
@@ -52,11 +52,11 @@
                             </div>
                         </form>
                         <div class="login-form-Forgot text-center">
-                            <a href="{{ route('password.request') }}" class="login-Forgot text-white"><u>{{__('message.login-Forgot')}}</u></a>
+                            <a href="{{ route('password.request',app()->getLocale()) }}" class="login-Forgot text-white"><u>{{__('message.login-Forgot')}}</u></a>
                         </div>
                         <div class="mt-5 login-form-Forgot text-center">
                             <p>
-                                {{__('message.login-dont-have-account')}} <a href="{{route('register')}}" class="login-to-Sign"><u>{{__('message.login-to-Sign')}}</u></a>
+                                {{__('message.login-dont-have-account')}} <a href="{{route('register',app()->getLocale())}}" class="login-to-Sign"><u>{{__('message.login-to-Sign')}}</u></a>
                             </p>
                         </div>
                     </div>

@@ -64,13 +64,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </button>
 
                         <div class="dropdown-content">
-                            <a href="/gr">
+                            <a href="{{ route('home','gr') }}">
                                 <img src="{{ asset('assets/logos/Greece.svg') }}" width="20" height="15">Greek</a>
-                            <a href="/pr">
+                            <a href="{{ route('home','pt') }}">
                                 <img src="{{ asset('assets/logos/Portugal.svg') }}"width="20" height="15">Portuguese</a>
-                            <a href="/sp">
+                            <a href="{{ route('home','es') }}">
                                 <img src="{{ asset('assets/logos/Spain.svg') }}"width="20" height="15">Spanish</a>
-                            <a href="/en">
+                            <a href="{{ route('home','en') }}">
                                 <img src="{{ asset('assets/logos/United-Kingdom.svg') }}"width="20" height="15">English</a>
                         </div>
                     </div>

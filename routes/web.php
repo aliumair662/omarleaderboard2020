@@ -13,21 +13,34 @@ use Illuminate\Support\Facades\App;
 |
 */
 
-Route::get('/', function () {
-    //return view('welcome');
+/*Route::get('/', function () {
     return redirect(route('home'));
 });
-
-//Route::get('/', 'HomeController@main')->name('main');
 Auth::routes();
-
 Route::get('/instagram', 'HomeController@instagram')->name('instagram');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/Leaderboard', 'HomeController@Leaderboard')->name('Leaderboard');
 Route::get('/noLeaderboard', 'HomeController@noLeaderboard')->name('noLeaderboard');
 Route::post('/latestMentionBoard', 'HomeController@latestMentionBoard')->name('latestMentionBoard');
-Route::post('/addinstagram', 'HomeController@addinstagram')->name('addinstagram');
-Route::get('/{locale}', function ($locale) {
-    App::setLocale($locale);
-    return redirect(route('home'));
+Route::post('/addinstagram', 'HomeController@addinstagram')->name('addinstagram');*/
+
+/**/
+Route::get('/', function () {
+    return redirect(app()->getLocale());
+});
+Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}'],
+    'middleware' => 'setlocale'], function() {
+    Route::get('/', function () {
+        return redirect(route('home',app()->getLocale()));
+    });
+
+    Auth::routes();
+
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/instagram', 'HomeController@instagram')->name('instagram');
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/Leaderboard', 'HomeController@Leaderboard')->name('Leaderboard');
+    Route::get('/noLeaderboard', 'HomeController@noLeaderboard')->name('noLeaderboard');
+    Route::post('/latestMentionBoard', 'HomeController@latestMentionBoard')->name('latestMentionBoard');
+    Route::post('/addinstagram', 'HomeController@addinstagram')->name('addinstagram');
 });
