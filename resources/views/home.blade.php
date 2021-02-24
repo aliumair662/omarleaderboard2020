@@ -88,7 +88,7 @@
 
 
                     </div>
-                    <div class="col-12 col-md-12 order-md-4 order-6 mt-4 mobile-leaderboard" style="display: none">
+                    <div class="col-12 col-md-12 order-md-4 order-6 mt-4 mobile-leaderboard">
 
                         <div class="Payment-Method-header leaderboard-header buyer-header position-relative">
 
@@ -110,7 +110,7 @@
 
                                         <div class="col-12">
 
-                                            <p>COMPETITION ENDS IN</p>
+                                            <p>Your Remaining Time Is</p>
 
                                         </div>
 
@@ -126,10 +126,12 @@
 
                                 <div class="col-md-3 col-3 order-3 order-md-3 prize-table text-right">
 
-                                    <div class="prize-button play-button">
-
-                                        <a href="#"><img class="changeimage playimage" src="assets/logos/play-button.svg" alt=""></a>
-
+                                <div class="prize-button exit-button">
+                                    <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();"><button class="btn">Pause Timer</button></a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
                                     </div>
 
                                 </div>
@@ -494,7 +496,10 @@
     </script>
 
     <script>
-
+        function change(){
+                        if (this.value=="Close Curtain") this.value = "Open Curtain";
+                        else this.value = "Close Curtain";
+                    }
         $(document).ready(function(){
             $(".changeimage").click(function(){
                 if($(this).hasClass('playimage')){
