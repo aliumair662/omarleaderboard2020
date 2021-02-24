@@ -17,7 +17,7 @@
                                     </div>
                                 @endif
                             </div>
-                            <form method="POST" action="{{ route('register') }}">
+                            <form method="POST" action="{{ route('register',app()->getLocale()) }}">
                                 @csrf
                                 <div class="Signup-input-group">
                                     <input type="text" name="firstname" placeholder="{{__('message.firstname')}}">
@@ -78,7 +78,7 @@
                                     </div>
                                     <div class="mt-5 login-form-Forgot text-center">
                                 <p>
-                                    {{__('message.already-have-account')}} <a href="{{route('login')}}" class="login-to-Sign"><u>{{__('message.Sign-in')}}</u></a>
+                                    {{__('message.already-have-account')}} <a href="{{route('login',app()->getLocale())}}" class="login-to-Sign"><u>{{__('message.Sign-in')}}</u></a>
                                 </p>
                             </div>
                                 </div>

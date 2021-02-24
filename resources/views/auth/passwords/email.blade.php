@@ -17,7 +17,7 @@
                             </div>
                         @endif
 
-                        <form method="POST" action="{{ route('password.email') }}">
+                        <form method="POST" action="{{ route('password.email',app()->getLocale()) }}">
                             @csrf
                             <div class="Signup-input-group">
                                 <input id="email" type="email" placeholder="{{__('message.email')}}" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">

@@ -10,7 +10,7 @@
                         <div class="login-logo text-center mb-4">
                             <img src="{{ asset('assets/logos/logo.svg') }}">
                         </div>
-                        <form method="POST" action="{{ route('password.update') }}">
+                        <form method="POST" action="{{ route('password.update',app()->getLocale()) }}">
                             @csrf
 
                             <input type="hidden" name="token" value="{{ $token }}">
