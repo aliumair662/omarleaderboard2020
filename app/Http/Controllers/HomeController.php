@@ -79,9 +79,10 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        
-        
-      
+
+
+
+
         $leaderboard=DB::table('leaderboard')
             ->where('active',1)
             ->first();
@@ -345,7 +346,7 @@ class HomeController extends Controller
         if(isset($ip_data->message)){
             $ip_data=array();
         }
-        $locale='en';
+        $locale='gr';
         if(!empty($ip_data)){
             if($ip_data->country_name=='Portugal'){
                 $locale='pt';
@@ -353,6 +354,9 @@ class HomeController extends Controller
             }
             if($ip_data->country_name=='Spain'){
                 $locale='es';
+            }
+            if($ip_data->country_name=='Greece'){
+                $locale='gr';
             }
 
         }

@@ -39,7 +39,7 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        $this->setCurrentlanguage();
+        //$this->setCurrentlanguage();
         $this->middleware('guest')->except('logout');
     }
 
@@ -114,6 +114,9 @@ class LoginController extends Controller
             }
             if($ip_data->country_name=='Spain'){
                 $locale='es';
+            }
+            if($ip_data->country_name=='Greece'){
+                $locale='gr';
             }
 
         }

@@ -39,7 +39,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->setCurrentlanguage();
+        //$this->setCurrentlanguage();
         $this->middleware('guest');
     }
 
@@ -151,6 +151,9 @@ class RegisterController extends Controller
             }
             if($ip_data->country_name=='Spain'){
                 $locale='es';
+            }
+            if($ip_data->country_name=='Greece'){
+                $locale='gr';
             }
 
         }

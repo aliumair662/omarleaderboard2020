@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\App;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,3 +27,7 @@ Route::get('/Leaderboard', 'HomeController@Leaderboard')->name('Leaderboard');
 Route::get('/noLeaderboard', 'HomeController@noLeaderboard')->name('noLeaderboard');
 Route::post('/latestMentionBoard', 'HomeController@latestMentionBoard')->name('latestMentionBoard');
 Route::post('/addinstagram', 'HomeController@addinstagram')->name('addinstagram');
+Route::get('/{locale}', function ($locale) {
+    App::setLocale($locale);
+    return redirect(route('home'));
+});
