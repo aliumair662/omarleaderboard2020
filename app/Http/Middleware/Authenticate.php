@@ -15,7 +15,7 @@ class Authenticate extends Middleware
     protected function redirectTo($request)
     {
         if (! $request->expectsJson()) {
-            return route('login',app()->getLocale());
+            return route('login',(isset($_COOKIE['locale'])) ? $_COOKIE['locale'] : app()->getLocale());
         }
     }
 }

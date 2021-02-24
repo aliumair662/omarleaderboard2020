@@ -43,7 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 </head>
 <body>
-    
+
     <!-- Google Tag Manager (noscript) -->
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN3SJHQ"
@@ -75,17 +75,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-12 text-center d-flex justify-content-center mt-2 mb-2">
                         <div class="dropdown">
                         <button class="dropbtn">
-                            Select Language
+                            <?php echo  (app()->getLocale() == 'gr') ? '<img src='.asset("assets/logos/Greece.svg").' width="20" height="15"> Greek' : '' ?>
+                            <?php echo  (app()->getLocale() == 'pt') ? '<img src='.asset("assets/logos/Portugal.svg").' width="20" height="15"> Portuguese' : '' ?>
+                            <?php echo  (app()->getLocale() == 'es') ? '<img src='.asset("assets/logos/Spain.svg").' width="20" height="15"> Spanish' : '' ?>
+                            <?php echo  (app()->getLocale() == 'en') ? '<img src='.asset("assets/logos/United-Kingdom.svg").' width="20" height="15"> English' : '' ?>
                         </button>
 
                         <div class="dropdown-content">
-                            <a href="/gr">
+                            <a href="{{ route(Route::currentRouteName(),'gr') }}">
                                 <img src="{{ asset('assets/logos/Greece.svg') }}" width="20" height="15">Greek</a>
-                            <a href="/pr">
+                            <a href="{{ route(Route::currentRouteName(),'pt') }}">
                                 <img src="{{ asset('assets/logos/Portugal.svg') }}"width="20" height="15">Portuguese</a>
-                            <a href="/sp">
+                            <a href="{{ route(Route::currentRouteName(),'es') }}">
                                 <img src="{{ asset('assets/logos/Spain.svg') }}"width="20" height="15">Spanish</a>
-                            <a href="/en">
+                            <a href="{{ route(Route::currentRouteName(),'en') }}">
                                 <img src="{{ asset('assets/logos/United-Kingdom.svg') }}"width="20" height="15">English</a>
                         </div>
                     </div>

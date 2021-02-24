@@ -88,7 +88,7 @@
 
 
                     </div>
-                    <div class="col-12 col-md-12 order-md-4 order-6 mt-4 mobile-leaderboard">
+                    <div class="col-12 col-md-12 order-md-4 order-6 mt-4 mobile-leaderboard" style="display: none;">
 
                         <div class="Payment-Method-header leaderboard-header buyer-header position-relative">
 
@@ -127,9 +127,9 @@
                                 <div class="col-md-3 col-3 order-3 order-md-3 prize-table text-right">
 
                                 <div class="prize-button exit-button">
-                                    <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                    <a href="{{ route('logout',app()->getLocale()) }}" onclick="event.preventDefault();
                                                         document.getElementById('logout-form').submit();"><button class="btn">Pause Timer</button></a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout',app()->getLocale()) }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                     </div>

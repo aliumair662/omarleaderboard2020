@@ -26,7 +26,7 @@ Route::post('/addinstagram', 'HomeController@addinstagram')->name('addinstagram'
 
 /**/
 Route::get('/', function () {
-    return redirect(app()->getLocale());
+    return redirect((isset($_COOKIE['locale'])) ? $_COOKIE['locale'] : app()->getLocale());
 });
 Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}'],
     'middleware' => 'setlocale'], function() {
@@ -43,4 +43,5 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}'],
     Route::get('/noLeaderboard', 'HomeController@noLeaderboard')->name('noLeaderboard');
     Route::post('/latestMentionBoard', 'HomeController@latestMentionBoard')->name('latestMentionBoard');
     Route::post('/addinstagram', 'HomeController@addinstagram')->name('addinstagram');
+
 });
