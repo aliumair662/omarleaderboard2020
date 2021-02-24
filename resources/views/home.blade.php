@@ -68,7 +68,7 @@
 
                         </div>
 
-                    </div  sty>
+                    </div>
 
                     <div class="col-12 col-md-12 order-md-3 order-3 mobile-leaderboard">
 
@@ -206,7 +206,7 @@
 
                         <div class="show-table rotate-image" >
 
-                            <img src="{{ asset('assets/logos/Group 88.svg') }}" alt="">
+                            <img src="assets/logos/Group 88.svg" alt="">
 
                         </div>
                     <div class="col-12 col-md-6 order-md-6 order-5 leaderboard-container position-relative" id="mytable">
