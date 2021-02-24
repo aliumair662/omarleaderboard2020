@@ -17,7 +17,7 @@
             <div class="container-fluid site-wrapper">
 
                 <div class="row m-0">
-                    <div class="col-12 col-md-12 order-md-2 order-2 mobile-leaderboard" style="display: none;">
+                    <div class="col-12 col-md-12 order-md-2 order-2 mobile-leaderboard">
 
                         <div class="Payment-Method-header leaderboard-header position-relative">
 
@@ -88,7 +88,7 @@
 
 
                     </div>
-                    <div class="col-12 col-md-12 order-md-4 order-6 mt-4 mobile-leaderboard" >
+                    <div class="col-12 col-md-12 order-md-4 order-6 mt-4 mobile-leaderboard" style="display: none;">
 
                         <div class="Payment-Method-header leaderboard-header buyer-header position-relative">
 
