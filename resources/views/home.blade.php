@@ -88,7 +88,7 @@
 
 
                     </div>
-                    <div class="col-12 col-md-12 order-md-4 order-6 mt-4 mobile-leaderboard" style="display: none;">
+                    <div class="col-12 col-md-12 order-md-4 order-6 mt-4 mobile-leaderboard" >
 
                         <div class="Payment-Method-header leaderboard-header buyer-header position-relative">
 
@@ -206,7 +206,7 @@
 
                         <div class="show-table rotate-image" >
 
-                            <img src="assets/logos/Group 88.svg" alt="">
+                            <img src="{{ asset('assets/logos/Group 88.svg') }}" alt="">
 
                         </div>
                     <div class="col-12 col-md-6 order-md-6 order-5 leaderboard-container position-relative" id="mytable">
