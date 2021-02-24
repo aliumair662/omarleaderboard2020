@@ -206,7 +206,7 @@
 
                         <div class="show-table rotate-image" >
 
-                            <img src="assets/logos/Group 88.svg" alt="">
+                            <img src="{{ asset('assets/logos/Group 88.svg') }}" alt="">
 
                         </div>
                     <div class="col-12 col-md-6 order-md-6 order-5 leaderboard-container position-relative" id="mytable">
