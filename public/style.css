@@ -1104,6 +1104,7 @@ button.dropbtn:focus{
     z-index: 1;
     bottom: 28px;
     max-height: 100px;
+    
 }
 
 .dropdown-content a {
