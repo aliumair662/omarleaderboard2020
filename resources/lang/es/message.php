@@ -21,7 +21,7 @@ return [
     'login-to-Sign' => 'crear una cuenta',
     'login-dont-have-account' => 'No tienes una cuenta?',
     'already-have-account' => 'Yaestásregistrado ?',
-    'footer-text' => 'El leaderboard es una plataforma de juegosdescentralizada . Los jugadorespuedenganaspremiosenefectivo y artículos de lujojugando los Leaderboard juegos .Nuestrosjuegos son accesiblesentodo el mundo . Los premiosenefectivo se pagarán a través de PayPal y todos los premios que no seanenefectivoseránenviados gratis a sudomicilio .Todos los juegos se basanen la habilidad y no por casualidad . El leaderboard no estáregulado por la comisión de juego .',
+    'footer-text' => 'El leaderboard es una plataforma de juegos descentralizada . Los jugadores pueden ganas premios en efectivo y artículos de lujo jugando los Leaderboard juegos . Nuestros juegos son accesibles en todo el mundo . Los premios en efectivo se pagarán a través de PayPal y todos los premios que no sean en efectivo serán enviados gratis a su domicilio . Todos los juegos se basan en la habilidad y no por casualidad . El leaderboard no está regulado por la comisión de juego .',
     'sign-giveaway' => 'Creatucuenta para poderver el leaderboard  endirecto ',
     'firstname' => 'nombre',
     'lastname' => 'Apellidos',
