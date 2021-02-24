@@ -17,7 +17,7 @@
             <div class="container-fluid site-wrapper">
 
                 <div class="row m-0">
-                    <div class="col-12 col-md-12 order-md-2 order-2 mobile-leaderboard">
+                    <div class="col-12 col-md-12 order-md-2 order-2 mobile-leaderboard" style="display: none;">
 
                         <div class="Payment-Method-header leaderboard-header position-relative">
 
@@ -68,7 +68,7 @@
 
                         </div>
 
-                    </div>
+                    </div  sty>
 
                     <div class="col-12 col-md-12 order-md-3 order-3 mobile-leaderboard">
 
