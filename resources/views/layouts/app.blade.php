@@ -58,22 +58,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-12 text-center">
                         <img src="{{ asset('assets/logos/logo.png') }}" height="40">
                     </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            Select Language
-                        </button>
-
-                        <div class="dropdown-content">
-                            <a href="{{ route('home','gr') }}">
-                                <img src="{{ asset('assets/logos/Greece.svg') }}" width="20" height="15">Greek</a>
-                            <a href="{{ route('home','pt') }}">
-                                <img src="{{ asset('assets/logos/Portugal.svg') }}"width="20" height="15">Portuguese</a>
-                            <a href="{{ route('home','es') }}">
-                                <img src="{{ asset('assets/logos/Spain.svg') }}"width="20" height="15">Spanish</a>
-                            <a href="{{ route('home','en') }}">
-                                <img src="{{ asset('assets/logos/United-Kingdom.svg') }}"width="20" height="15">English</a>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -89,9 +73,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                        <p>©️ 2021 The Leaderboard</p>
                     </div>
                     <div class="col-12 text-center d-flex justify-content-center mt-2 mb-2">
-                        <div class="language-selector">
-                            <div id="google_translate_element"></div>
+                        <div class="dropdown">
+                        <button class="dropbtn">
+                            Select Language
+                        </button>
+
+                        <div class="dropdown-content">
+                            <a href="/gr">
+                                <img src="{{ asset('assets/logos/Greece.svg') }}" width="20" height="15">Greek</a>
+                            <a href="/pr">
+                                <img src="{{ asset('assets/logos/Portugal.svg') }}"width="20" height="15">Portuguese</a>
+                            <a href="/sp">
+                                <img src="{{ asset('assets/logos/Spain.svg') }}"width="20" height="15">Spanish</a>
+                            <a href="/en">
+                                <img src="{{ asset('assets/logos/United-Kingdom.svg') }}"width="20" height="15">English</a>
                         </div>
+                    </div>
                         <div class="insta-feed ml-3">
                             <a href="https://www.instagram.com/theleaderboard.io/">
                              <i class="fab fa-instagram"></i>
