@@ -58,6 +58,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-12 text-center">
                         <img src="{{ asset('assets/logos/logo.png') }}" height="40">
                     </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Select Language
+                        </button>
+
+                        <div class="dropdown-content">
+                            <a href="/gr">
+                                <img src="{{ asset('assets/logos/Greece.svg') }}" width="20" height="15">Greek</a>
+                            <a href="/pr">
+                                <img src="{{ asset('assets/logos/Portugal.svg') }}"width="20" height="15">Portuguese</a>
+                            <a href="/sp">
+                                <img src="{{ asset('assets/logos/Spain.svg') }}"width="20" height="15">Spanish</a>
+                            <a href="/en">
+                                <img src="{{ asset('assets/logos/United-Kingdom.svg') }}"width="20" height="15">English</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
