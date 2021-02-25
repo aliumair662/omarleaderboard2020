@@ -62,7 +62,7 @@ class HomeController extends Controller
                     ->where('id',Auth::id())
                     ->update(array('instagramUsername' =>$instagramUsername,
                     ));
-                return redirect('/home');
+                return redirect('/'.app()->getLocale().'/home');
 
         }else{
             return back()->with('error', 'Please add instagram Username !');

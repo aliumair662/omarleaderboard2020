@@ -17,7 +17,7 @@
                                     </div>
                                 @endif
                             </div>
-                            <form method="POST" action="{{ route('addinstagram') }}">
+                            <form method="POST" action="{{ route('addinstagram',app()->getLocale()) }}">
                                 @csrf
                                 <div class="instagram Signup-input-group d-flex">
                                    <div class="input-group-prepend instagram">
