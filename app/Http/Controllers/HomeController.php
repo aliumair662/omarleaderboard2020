@@ -80,6 +80,12 @@ class HomeController extends Controller
     {
 
 
+       $noinstagram=DB::table('users')
+            ->where('id',Auth::id())
+            ->whereNull('instagramUsername')->first();
+            if(!empty($noinstagram)){
+                return redirect(route('instagram',app()->getLocale()));
+            }
 
 
         $leaderboard=DB::table('leaderboard')
@@ -87,7 +93,7 @@ class HomeController extends Controller
             ->first();
 
         if(empty($leaderboard)){
-            return redirect(route('noLeaderboard'));
+            return redirect(route('noLeaderboard',app()->getLocale()));
         }
         if(!empty($leaderboard)){
 
