@@ -40,7 +40,7 @@ return [
     'see-prizes' => 'Voir les prix',
     'competitions-end-in' => 'LA COMPÉTITION SE TERMINE DANS',
     'days' => 'Jours',
-    'hours' => 'Les heures',
+    'hours' => 'heures',
     'mins' => 'Minutes',
     'secs' => 'Secs',
     'not-on-the-live-leaderboard' => 'Vous n\'êtes pas dans le classement en direct, commencez à marquer vos amis pour apparaître dans le classement en direct.',
