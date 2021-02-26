@@ -21,7 +21,7 @@ return [
     'login-to-Sign' => 's\'enregistrer',
     'login-dont-have-account' => 'Vous n\'avez pas de compte?',
     'already-have-account' => 'us avez déjà un compte ?',
-    'footer-text' => 'Le classement est une plate-forme de jeu décentralisée. Les joueurs peuvent gagner des prix en argent abs produits de luxe en jouant aux jeux de classement . Nos jeux sont accessibles dans le monde entier . Les prix en espèces seront versés par PayPal et tous les prix non monétaires seront affichés gratuitement dans le monde entier. Tous les jeux sont basés sur l’habileté et non pas par hasard . Nous ne sommes pas réglementés par la Commission des jeux d’argent.',
+    'footer-text' => 'The Leaderboard est une plate-forme de jeu décentralisée. Les joueurs peuvent gagner des prix en argent abs produits de luxe en jouant aux jeux de classement . Nos jeux sont accessibles dans le monde entier . Les prix en espèces seront versés par PayPal et tous les prix non monétaires seront affichés gratuitement dans le monde entier. Tous les jeux sont basés sur l’habileté et non pas par hasard . Nous ne sommes pas réglementés par la Commission des jeux d’argent.',
     'sign-giveaway' => 'Créons d’abord un compte pour que vous puissiez voir le classement en direct',
     'firstname' => 'Prénom',
     'lastname' => 'Nom de famille',
