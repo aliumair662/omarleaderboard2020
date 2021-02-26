@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'login-giveaway' => 'Connectez-vous pour voirnotrecadeau de classementen direct.',
+    'login-giveaway' => 'Connectez-vous pour voir notre cadeau de classement en direct',
     'email' => 'email',
     'password' => 'mot de passe',
     'login-button' => 'connectez-vous',
@@ -21,8 +21,8 @@ return [
     'login-to-Sign' => 's\'enregistrer',
     'login-dont-have-account' => 'Vous n\'avez pas de compte?',
     'already-have-account' => 'us avez déjà un compte ?',
-    'footer-text' => 'Le classementestune plate-forme de jeu décentralisée. Les joueurspeuventgagner des prix en argent abs produitsde luxeenjouant aux jeux de classement . Nos jeux sontaccessibles dans le monde entier . Les prix enespècesserontversés par PayPal et tous les prix non monétairesserontaffichésgratuitement dans le monde entier. Tous les jeux sontbasés sur l’habileté et non pas par hasard . Nous ne sommes pas réglementés par la Commission des jeux d’argent.',
-    'sign-giveaway' => 'Créonsd’abord un compte pour que vouspuissiezvoir le classementen direct',
+    'footer-text' => 'Le classement est une plate-forme de jeu décentralisée. Les joueurs peuvent gagner des prix en argent abs produits de luxe en jouant aux jeux de classement . Nos jeux sont accessibles dans le monde entier . Les prix en espèces seront versés par PayPal et tous les prix non monétaires seront affichés gratuitement dans le monde entier. Tous les jeux sont basés sur l’habileté et non pas par hasard . Nous ne sommes pas réglementés par la Commission des jeux d’argent.',
+    'sign-giveaway' => 'Créons d’abord un compte pour que vous puissiez voir le classement en direct',
     'firstname' => 'Prénom',
     'lastname' => 'Nom de famille',
     'password_confirmation' => 'Confirmer le mot de passe',
@@ -30,9 +30,9 @@ return [
     'terms&conditions' => 'avec les modalités',
     'createaccount' => 'Créer un compte',
     'Sign-in' => 'S\'identifier',
-    'forgot-password-giveaway' => 'Vousavezoubliévotre mot de passe ? Ne vousinquiétez pas, nous vousenverronsimmédiatement un lien de réinitialisation.',
+    'forgot-password-giveaway' => 'Vous avez oublié votre mot de passe ? Ne vous inquiétez pas, nous vous enverrons immédiatement un lien de réinitialisation.',
     'send-password-link' => 'Envoyer le lien de réinitialisation du mot de passe',
-    'instagram-giveaway' => 'Entrez votre @nom Instagram afin que se puissevous identifier sur le classement',
+    'instagram-giveaway' => 'Entrez votre @nom Instagram afin que se puisse vous identifier sur le classement',
     'instagram-username' => 'Nom d\'utilisateur instagram',
     'add-instagram-account' => 'Ajouter un compte Instagram',
     'no-password-required-instagram' => 'Aucun mot de passe requis! Votre @nom Instagram ne sera utilisé que pour vous connecter à votre compte Instagram sur le classement.',
