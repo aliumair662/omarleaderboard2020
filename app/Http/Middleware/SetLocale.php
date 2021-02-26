@@ -21,7 +21,7 @@ class SetLocale
             app()->setLocale($request->segment(1));
         }else{
             if(isset($_COOKIE['locale'])) {
-                if(in_array($_COOKIE['locale'], array("en", "pt", "es", "gr","al"))){
+                if(in_array($_COOKIE['locale'], array("en", "pt", "es", "gr","al","fr"))){
                     if($_COOKIE['locale']==$request->segment(1) ){
                         app()->setLocale($_COOKIE['locale']);
                     }else{
@@ -67,6 +67,9 @@ class SetLocale
             }
             $locale='en';
             if(!empty($ip_data)){
+                if($ip_data->country_name=='Greece'){
+                    $locale='gr';
+                }
                 if($ip_data->country_name=='Portugal'){
                     $locale='pt';
 
@@ -74,11 +77,11 @@ class SetLocale
                 if($ip_data->country_name=='Spain'){
                     $locale='es';
                 }
-                if($ip_data->country_name=='Greece'){
-                    $locale='gr';
-                }
                 if($ip_data->country_name=='Albania'){
                     $locale='al';
+                }
+                if($ip_data->country_name=='France'){
+                    $locale='fr';
                 }
 
             }
