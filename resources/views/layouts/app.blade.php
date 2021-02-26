@@ -79,6 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <?php echo  (app()->getLocale() == 'pt') ? '<img src='.asset("assets/logos/Portugal.svg").' width="20" height="15"> Portuguese' : '' ?>
                             <?php echo  (app()->getLocale() == 'es') ? '<img src='.asset("assets/logos/Spain.svg").' width="20" height="15"> Spanish' : '' ?>
                             <?php echo  (app()->getLocale() == 'en') ? '<img src='.asset("assets/logos/United-Kingdom.svg").' width="20" height="15"> English' : '' ?>
+                            <?php echo  (app()->getLocale() == 'al') ? '<img src='.asset("assets/logos/United-Kingdom.svg").' width="20" height="15"> English' : '' ?>
                         </button>
 
                         <div class="dropdown-content">
@@ -90,6 +91,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <img src="{{ asset('assets/logos/Spain.svg') }}"width="20" height="15">Spanish</a>
                             <a href="{{ route(Route::currentRouteName(),'en') }}">
                                 <img src="{{ asset('assets/logos/United-Kingdom.svg') }}"width="20" height="15">English</a>
+                            <a href="{{ route(Route::currentRouteName(),'al') }}">
+                                <img src="{{ asset('assets/logos/albania.svg') }}"width="20" height="15">Albania</a>
                         </div>
                     </div>
                         <div class="insta-feed ml-3">

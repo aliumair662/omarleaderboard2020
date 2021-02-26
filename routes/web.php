@@ -43,5 +43,5 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}'],
     Route::get('/noLeaderboard', 'HomeController@noLeaderboard')->name('noLeaderboard');
     Route::post('/latestMentionBoard', 'HomeController@latestMentionBoard')->name('latestMentionBoard');
     Route::post('/addinstagram', 'HomeController@addinstagram')->name('addinstagram');
-
+    Route::get('/buytime', 'HomeController@buytime')->name('buytime');
 });
