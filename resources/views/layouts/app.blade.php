@@ -82,7 +82,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <?php echo  (app()->getLocale() == 'al') ? '<img src='.asset("assets/logos/albania.svg").' width="20" height="15"> Albania' : '' ?>
                             <?php echo  (app()->getLocale() == 'fr') ? '<img src='.asset("assets/logos/French.svg").' width="20" height="15"> France' : '' ?>
                         </button>
-
+                <input type="hidden" name="lang" id="lang" value="{{app()->getLocale()}}">
                         <div class="dropdown-content">
                             <a href="{{ route(Route::currentRouteName(),'gr') }}">
                                 <img src="{{ asset('assets/logos/Greece.svg') }}" width="20" height="15">Greek</a>
@@ -215,7 +215,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
         /*Get Post Updated Data*/
         function getSinglelatestMentionBoard(){
-            var route='/public/latestMentionBoard';
+            var route='/public/'+$("#lang").val()+'/latestMentionBoard';
             $.ajax({
                 url: route,
                 type: 'POST',
