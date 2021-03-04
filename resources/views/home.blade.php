@@ -88,20 +88,18 @@
 
 
                     </div>
-                    <div class="col-12 col-md-12 order-md-4 order-6 mt-4 mobile-leaderboard" style="display: none;">
+                    <div class="col-12 col-md-12 order-md-4 order-6 mt-4 mobile-leaderboard user-leaderboard-buy-time-section" >
 
                         <div class="Payment-Method-header leaderboard-header buyer-header position-relative">
 
                             <div class="row">
 
                                 <div class="col-md-3 col-3 order-md-1 desktop order-1 text-left">
+                                    @if($leaderboard->package >0)
                                     <div class="prize-button exit-button">
-                                    <a href="{{ route('logout',app()->getLocale()) }}" onclick="event.preventDefault();
-                                                        document.getElementById('logout-form').submit();"><button class="btn">Buy Time</button></a>
-                                    <form id="logout-form" action="{{ route('logout',app()->getLocale()) }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
+                                    <a href="{{ route('buytime',array(app()->getLocale(), $leaderboard->id)) }}"><button class="btn">Buy Time</button></a>
                                     </div>
+                                    @endif
                                 </div>
 
                                 <div class="col-md-6 col-6 order-md-2 order-2 casino-timer leaderboard-timer text-center counter-width">
@@ -260,10 +258,11 @@
                                     $p=1;
                                     $FinalMentions=$leaderboard->post_mentions;
                                     $class='dark-red';
+                                
                                     ?>
 
 
-
+                                     @if(!empty($FinalMentions))
                                     @foreach($FinalMentions as $Mentions)
 
                                         <?php
@@ -339,7 +338,7 @@
                                         ?>
 
                                     @endforeach
-
+                                     @endif
                                 @endif
 
 

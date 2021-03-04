@@ -634,6 +634,181 @@ option {
     padding: 5px 20px;
     margin-bottom: 0px;
 }
+/*============================================   Buy Page==========================================*/
+.buy-description{
+    background: #1D1D30 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 9px #20FC9D;
+    border: 2px solid #20FC9D;
+    border-radius: 19px;
+    padding: 15px 30px;
+    max-width: 612px;
+    margin: 0 auto;
+    opacity: 1;
+}
+.buy-chances{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+.buy-description p{
+    font: normal normal normal 14px/18px Roboto;
+    word-spacing: 0.500px;    
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: #FCA120;
+}
+/* .count-chances{
+    text-align: center;
+} */
+.buy-chances-row{
+    align-items: center;
+    justify-content: center;
+}
+.buy-btn{
+    text-align: right;
+    float: right;
+}
+.buy-chances-img{
+    width: 60px;
+    height: 45px;
+}
+.buy-chances-img img{
+    width: 100%;
+}
+.count-chances-limt{
+    font-weight: 700;
+    margin: 0px 5px;
+    font-size: 25px;
+    color: white;
+}
+.dollar-sign-icon i{
+    color: #00CBFF;
+    font-size: 30px;   
+}
+.Wallet .payment-text {
+    margin-left: -15px;
+    margin-top: 4px;
+}
+.buy-chances-wrapper .Prize-wrapper{
+    margin: 0px 0%;
+}
+.buy-chances-wrapper{
+    max-width: 1050px;
+    margin: 68px auto;
+}
+.Wallet-dollar-sign{
+    float: right;
+}
+.buy-chances-footer{
+    padding: 30px 0px;
+}
+.buy-description-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buy-description-footer p{
+    font: normal normal normal 14px/18px Roboto;
+    letter-spacing: 0px;
+    color: #FCA120;
+    opacity: 1;
+    margin-bottom: 0px;
+    margin-right: 7px;
+}
+.buy-chances-payment-method{
+    align-items: center;
+}
+/* Model */
+.modal-dialog .modal-custom-styling{
+    background: #1A1F26 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 29px #fca120;
+    border: 5px solid #FCA120;
+    border-radius: 13px;
+    opacity: 1;
+}
+.modal-custom-styling .modal-header .close {
+    border-top-right-radius: 5px;
+    margin: -16px -1rem -1rem auto;
+    background: #fca120;
+    padding: .6rem;
+    color: #fff;
+    display:none;
+}
+.modal-custom-styling .modal-header{
+    justify-content: center;
+}
+.modal-custom-styling .modal-header .modal-title{
+    text-align: left;
+}
+.model-button-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buy-model-content{
+    text-align: left;
+}
+.buy-model-content p{
+    font: normal normal normal 14px/18px Roboto;
+    word-spacing: 0.500px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 0px;
+    color: #FCA120;   
+}
+.buy-model-content .d-flex{
+    align-items: center;
+}
+.Complete-Purchase-btn{
+    background: #1A1F26 0% 0% no-repeat padding-box;
+    font: normal normal bold 11px/12px Roboto;
+    box-shadow: 0px 0px 11px #00CBFFFA;
+    border: 1px solid #00CBFF;
+    text-transform: uppercase;
+    letter-spacing: 0.43px;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin-right: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.Cancel-button{
+    background: #1A1F26 0% 0% no-repeat padding-box;
+    font: normal normal bold 11px/12px Roboto;
+    box-shadow: 0px 0px 11px #FF2A2AFA;
+    text-transform: uppercase;
+    border: 1px solid #FF2A2A;
+    letter-spacing: 0.43px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.Prize-child {
+    background: #1D1D30 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 13px #ff00c4;
+    border: 1px solid #FF00C4;
+    border-radius: 19px;
+    margin: 3% 0px;
+    padding: 20px;
+    opacity: 1;
+}
+.Prize-View-btn {
+    background: #FCA120 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 15px #fca120a3;
+    border: 1px solid #FCA120;
+    letter-spacing: 0px;
+    border-radius: 7px;
+    padding: 6px 10px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 15px;
+    color: #32292E;
+    opacity: 1;
+}
 @media screen and (min-width: 768px) {
     .prize-mobile,
     .show-table {

@@ -83,18 +83,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <?php echo  (app()->getLocale() == 'fr') ? '<img src='.asset("assets/logos/French.svg").' width="20" height="15"> France' : '' ?>
                         </button>
                 <input type="hidden" name="lang" id="lang" value="{{app()->getLocale()}}">
+
                         <div class="dropdown-content">
-                            <a href="{{ route(Route::currentRouteName(),'gr') }}">
+
+                            <a href="{{ str_replace(app()->getLocale(),'gr',url()->current()) }}">
                                 <img src="{{ asset('assets/logos/Greece.svg') }}" width="20" height="15">Greek</a>
-                            <a href="{{ route(Route::currentRouteName(),'pt') }}">
+                            <a href="{{ str_replace(app()->getLocale(),'pt',url()->current()) }}">
                                 <img src="{{ asset('assets/logos/Portugal.svg') }}"width="20" height="15">Portuguese</a>
-                            <a href="{{ route(Route::currentRouteName(),'es') }}">
+                            <a href="{{ str_replace(app()->getLocale(),'es',url()->current()) }}">
                                 <img src="{{ asset('assets/logos/Spain.svg') }}"width="20" height="15">Spanish</a>
-                            <a href="{{ route(Route::currentRouteName(),'en') }}">
+                            <a href="{{ str_replace(app()->getLocale(),'en',url()->current()) }}">
                                 <img src="{{ asset('assets/logos/United-Kingdom.svg') }}"width="20" height="15">English</a>
-                            <a href="{{ route(Route::currentRouteName(),'al') }}">
+                            <a href="{{ str_replace(app()->getLocale(),'al',url()->current()) }}">
                                 <img src="{{ asset('assets/logos/albania.svg') }}"width="20" height="15">Albania</a>
-                            <a href="{{ route(Route::currentRouteName(),'fr') }}">
+                            <a href="{{ str_replace(app()->getLocale(),'fr',url()->current()) }}">
                                 <img src="{{ asset('assets/logos/French.svg') }}"width="20" height="15">France</a>
                         </div>
                     </div>

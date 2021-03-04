@@ -144,6 +144,7 @@ class HomeController extends Controller
             $leaderboard->topermentiones='';
             $leaderboard->mymentiones='';
             $leaderboard->awaymessage='';
+            $leaderboard->post_mentions=array();
             $awaymentiones='';
             if(!empty($leaderboardleaderboardmentions)){
                 $leaderboard->post_mentions=$leaderboardleaderboardmentions;
@@ -318,5 +319,24 @@ class HomeController extends Controller
         else
             return $number. $ends[$number % 10];
     }
+
+ function buytime($locale,$id){
+   
+    $leaderboard=DB::table('leaderboard')
+            ->where('id',$id)->first();
+                  $package=array();
+            if(!empty($leaderboard)){
+            $package=DB::table('leaderboardpackages')
+            ->where('id', $leaderboard->package)->first();
+            $package->onehour=$package->price_per_hour * 1;
+            $package->twohour=$package->price_per_hour * 2;
+            $package->threehour=$package->price_per_hour * 3;
+            $package->fourhour=$package->price_per_hour * 4;
+            }
+     
+
+        return view('buytime',array('leaderboard'=>$leaderboard,'package'=> $package));
+    }
+
 
 }
